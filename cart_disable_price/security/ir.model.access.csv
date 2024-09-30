@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cart_disable_price_cart_disable_price,cart_disable_price.cart_disable_price,model_cart_disable_price_cart_disable_price,base.group_user,1,1,1,1

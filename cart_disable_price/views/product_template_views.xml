@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="hide_add_to_cart_zero_price" inherit_id="website_sale.product">
-        <xpath expr="//form[@class='oe_website_sale']" position="attributes">
+        <xpath expr="//a[@id='add_to_cart']" position="attributes">
             <attribute name="t-attf-class">
-                <t t-esc="('d-none' if product.lst_price == 0 else '')"/> oe_website_sale
+                <t t-if="product.lst_price == 0">d-none</t>
             </attribute>
         </xpath>
     </template>
